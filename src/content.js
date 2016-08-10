@@ -1,5 +1,7 @@
 // dependencies
 import React from 'react';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import WorldSvgIcon from 'material-ui/svg-icons/social/public';
 import Paper from 'material-ui/Paper';
 
 
@@ -19,13 +21,16 @@ class Content extends React.Component {
 
 	render() {
 		return (
-			<div>
-		    <Paper style={style} zDepth={1} />
-		    <Paper style={style} zDepth={2} />
+			<Card>
+				<CardHeader
+		      title="Standard Built-in Objects"
+		      subtitle="Objects available in the global scope"
+		      avatar={WorldSvgIcon}
+		    />
 		    <Paper style={style} zDepth={3} />
 		    <Paper style={style} zDepth={4} />
 		    <Paper style={style} zDepth={5} />
-		  </div>
+		  </Card>
 		)
 	}
 };
